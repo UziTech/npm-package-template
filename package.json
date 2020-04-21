@@ -34,15 +34,5 @@
     "eslint": "^6.8.0",
     "jest-cli": "^25.4.0",
     "semantic-release": "^17.0.7"
-  },
-  "release": {
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/github",
-      "@semantic-release/git"
-    ]
   }
 }
