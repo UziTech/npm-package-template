@@ -68,7 +68,6 @@ jobs:
   Automerge:
     needs: [Test, Coverage, Lint]
     runs-on: ubuntu-latest
-    # timeout-minutes: 60
     if: |
       github.actor == 'dependabot[bot]' &&
       github.event_name == 'pull_request' &&
