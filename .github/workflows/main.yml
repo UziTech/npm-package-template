@@ -1,6 +1,6 @@
 name: "tests"
 on:
-  pull_request:
+  pull_request_target:
   push:
     branches:
       - master
@@ -78,10 +78,11 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            await github.pulls.merge({
+            await github.issues.createComment({
               owner: context.payload.repository.owner.login,
               repo: context.payload.repository.name,
-              pull_number: context.payload.pull_request.number
+              issue_number: context.payload.pull_request.number,
+              body: '@dependabot merge'
             })
 
   Skip:
