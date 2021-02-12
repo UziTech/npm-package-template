@@ -12,6 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/UziTech/npm-package-template.git"
   },
+  "funding": {
+    "url": "https://github.com/sponsors/UziTech"
+  },
   "keywords": [
     "emmet",
     "createelement",
