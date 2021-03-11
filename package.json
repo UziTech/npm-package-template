@@ -15,11 +15,7 @@
   "funding": {
     "url": "https://github.com/sponsors/UziTech"
   },
-  "keywords": [
-    "emmet",
-    "createelement",
-    "dom"
-  ],
+  "keywords": [],
   "author": "Tony Brix <Tony@Brix.ninja> (https://Tony.Brix.ninja)",
   "license": "MIT",
   "bugs": {
