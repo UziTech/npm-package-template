@@ -1,14 +1,16 @@
 import js from "@eslint/js";
 import globals from "globals";
+import tseslint from "typescript-eslint";
 
 export default [
 	js.configs.recommended,
+	...tseslint.configs.recommended,
 	{
 		languageOptions: {
 			globals: {
 				...globals.browser,
 				...globals.node,
-				...globals.es6,
+				...globals.es2022,
 				...globals.jest,
 			},
 			parserOptions: {
@@ -87,7 +89,7 @@ export default [
 	{
 		ignores: [
 			"coverage/",
-
+			"dist/",
 		],
 	},
 ];

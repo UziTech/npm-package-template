@@ -1,4 +1,6 @@
+/** @type {import('ts-jest').JestConfigWithTsJest} */
 export default {
+	preset: "ts-jest",
 	restoreMocks: true,
 	clearMocks: true,
 	// collectCoverage: true,
@@ -15,5 +17,6 @@ export default {
 			"statements": 100,
 		},
 	},
-	testRegex: /\.test\.jsx?$/.source,
+	testRegex: /\.test\.tsx?$/.source,
+	testEnvironment: "node",
 };
