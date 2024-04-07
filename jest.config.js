@@ -5,7 +5,7 @@ export default {
 	clearMocks: true,
 	// collectCoverage: true,
 	collectCoverageFrom: [
-		"src/**/*.js",
+		"src/**/*.ts",
 		"!**/node_modules/**",
 	],
 	coverageDirectory: "coverage",
