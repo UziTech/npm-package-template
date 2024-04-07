@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "description": "NPM Package Template",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "test": "jest --verbose",
     "test:cover": "jest --coverage",
-    "lint": "eslint ."
+    "lint": "eslint",
+    "format": "eslint --fix"
   },
   "repository": {
     "type": "git",
@@ -29,7 +31,7 @@
     "@semantic-release/github": "^10.0.3",
     "@semantic-release/npm": "^12.0.0",
     "@semantic-release/release-notes-generator": "^13.0.0",
-    "eslint": "^8.57.0",
+    "eslint": "^9.0.0",
     "jest-cli": "^29.7.0",
     "semantic-release": "^23.0.7"
   }
