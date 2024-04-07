@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	restoreMocks: true,
 	clearMocks: true,
 	// collectCoverage: true,
