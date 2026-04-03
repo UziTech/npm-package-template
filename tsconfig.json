@@ -5,8 +5,9 @@
     "declaration": true,
     "sourceMap": true,
     "inlineSources": true,
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "rootDir": ".",
+    "types": ["jest"]
   },
   "include": ["./src/**/*"]
 }
