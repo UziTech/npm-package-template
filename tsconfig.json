@@ -6,8 +6,12 @@
     "sourceMap": true,
     "inlineSources": true,
     "allowSyntheticDefaultImports": true,
-    "rootDir": ".",
-    "types": ["jest"]
+    "rootDir": "./src",
+    "types": [
+      "jest"
+    ]
   },
-  "include": ["./src/**/*"]
+  "include": [
+    "./src/**/*"
+  ]
 }
