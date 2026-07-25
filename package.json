@@ -4,9 +4,12 @@
   "description": "NPM Package Template",
   "main": "dist/index.js",
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "jest --verbose",
-    "test:cover": "jest --coverage",
+    "test": "node --test spec/**/*.test.ts",
+    "test:cover": "node --test --experimental-test-coverage --test-coverage-lines=100 --test-coverage-branches=100 --test-coverage-functions=100 spec/**/*.test.ts",
     "lint": "eslint",
     "format": "eslint --fix",
     "build": "tsc"
@@ -33,13 +36,10 @@
     "@semantic-release/github": "^12.0.9",
     "@semantic-release/npm": "^13.1.5",
     "@semantic-release/release-notes-generator": "^14.1.1",
-    "@types/jest": "^30.0.0",
+    "@types/node": "^26.1.1",
     "eslint": "^10.8.0",
     "globals": "^17.7.0",
-    "jest": "^30.4.2",
-    "jest-cli": "^30.4.2",
     "semantic-release": "^25.0.8",
-    "ts-jest": "^29.4.12",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.65.0"
   }

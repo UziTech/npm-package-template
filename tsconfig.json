@@ -7,9 +7,6 @@
     "inlineSources": true,
     "allowSyntheticDefaultImports": true,
     "rootDir": "./src",
-    "types": [
-      "jest"
-    ]
   },
   "include": [
     "./src/**/*"

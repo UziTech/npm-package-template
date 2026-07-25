@@ -11,7 +11,6 @@ export default [
 				...globals.browser,
 				...globals.node,
 				...globals.es2022,
-				...globals.jest,
 			},
 			parserOptions: {
 				sourceType: "module",
